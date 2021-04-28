@@ -1,0 +1,203 @@
+body {
+    font-family: "Lato", sans-serif;
+  }
+  
+.sidenav {
+  line-height: 1.1;
+  width: 280px;
+  height: 830px;
+
+  position: relative;
+  left: 0;
+  background-color: #F8F8F8;
+  overflow-x: hidden;
+  padding-top: 0px;
+  font-size: 20px;
+  padding: 10px;
+}
+  
+.sidenav a {
+  padding: 6px 8px 1px 12px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #00009a;
+  display: block;
+}
+  
+.sidenav a:hover {
+  color: #00439a;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+  
+main {
+  /*margin-left: 320px; /* Same as the width of the sidenav */
+  font-size: 25px; /* Increased text to enable scrolling */
+position: relative;
+z-index: -10;
+}
+
+  
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+.heading {
+    color: #00009a;
+}
+
+.emphasis{
+    color: #696969;
+}
+
+.bodymain{
+    color: #002f45;
+}
+
+
+.bodysidebar{
+    padding-top: 0;
+    padding-left: 6px;
+    padding-right: 2px;
+  color: #002f45;
+}
+
+.programming{
+  margin: 4px;
+}
+
+.cadre{
+  border: 1px solid #002f45;
+  padding: 2px;
+  line-height: 1.5;
+}
+
+.accent {
+    color : #000e17;
+}
+  
+#ME {
+    width : 40%;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+
+/* I've had some issues overwriting bootstrap's imposed style for hr.
+The !important seems to fix my issue */
+.myHrStyle {
+  border: none;
+  opacity: 1;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  /* Set the hr color */
+  background-color: #00009a; /* Modern Browsers */
+  width:85%;
+  /*text-align:left;*/
+  margin-left: 12px;
+  height: 4px !important;
+
+}
+
+/* hr{
+  height: 3px;
+} */
+
+main{
+  margin-top: 25px;
+}
+
+.navbar {
+  position:absolute;
+  z-index: -1;
+}
+.navbar a:hover {
+  color: #456794  !important;
+}
+
+
+nav {
+  display: flex;
+  font-size: 20px;
+  /* Force le menu à rester en haut de notre écran*/
+  position:sticky;
+  top:0;
+  margin: 0px !important;
+}
+nav a {
+  padding: 12px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #456794;
+}
+
+nav a {
+  flex: 1;
+  background-color: #000064;
+  color: white;
+  text-align: center;
+}
+
+/*make the sidebar disappear if the screen is too small*/
+/* NB : Only on pages other than the main page*/
+
+main {
+  background-color: lightgray;
+  padding: 20px;
+  display: flex;
+}
+
+aside {
+  display: flex;
+  flex:1;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+#indexmain {
+display: flex;
+flex : 4;
+flex-direction: column;
+}
+
+.maincontent{
+  display: flex;
+  flex : 4;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 800px) {
+  .optional {
+    display: none ;
+  }
+  #indexmain {
+    margin-left: 30 px;}
+  nav {font-size: 10px;}
+  main{
+    flex-direction: column;
+  }
+  .sidenav {
+    width: 100%;
+    height: unset;
+  }
+  aside {margin-right : 0px;}
+  
+}
+
+@media screen and (max-width: 1300px) {
+  #indexmain {flex : 2}
+}
+
+@media screen and (max-height: 500px) {
+  #indexmain {flex : 1;}
+  nav { font-size: 10px;}
+}

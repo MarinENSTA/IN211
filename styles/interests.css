@@ -1,0 +1,83 @@
+/* articles */
+#articles {
+    flex: 4;
+    display: flex;
+    flex-flow: column wrap;
+  
+  }
+  
+  article {
+    flex: 1;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 19px;
+    box-shadow: 0 0 10px #0a0a64; /* adding the nice shadow effect around topic boxes */
+    margin : 8px;
+    padding: 25px;
+  }
+  
+  article img {
+    border-radius: 100px;
+  }
+  
+  article a {
+    padding: 5px;
+    color: #00009a;
+  }
+
+  article ul {
+    text-align: left;
+  }
+  article p {
+    text-align: left;
+  }
+
+
+  #interestsDiv {
+    display: flex;
+    flex : 4; 
+    flex-flow: row wrap; /* This line is what makes it behave the way I intended it. two "articles" sections can stand side by side thanks to this*/
+  }
+
+  #videoDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+
+
+  @media screen and (max-width: 1200px) {
+    #articles{ flex : 3}
+    #interestsDiv{
+      flex : 3;
+    }
+    video {
+      width: 320px;
+      height: 320px;
+    }
+    #videoDiv {
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    #articles{ flex : 2}
+    #interestsDiv{
+      flex : 2;
+    }
+    video {
+      width: 300px;
+      height: 300px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    #articles{ flex-direction: column;}
+    article {
+      padding : 10px;
+    }
+    video {
+      width: 250px;
+      height: 250px;
+    }
+  }
