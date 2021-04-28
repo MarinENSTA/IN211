@@ -39,11 +39,17 @@
     flex-flow: row wrap; /* This line is what makes it behave the way I intended it. two "articles" sections can stand side by side thanks to this*/
   }
 
-  #videoDiv {
+  #mazeDiv {
     display: flex;
     justify-content: center;
     align-items: center;
   } 
+
+  .videoDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 
   @media screen and (max-width: 1200px) {
@@ -51,11 +57,17 @@
     #interestsDiv{
       flex : 3;
     }
-    video {
+    #mazeDiv video {
       width: 320px;
       height: 320px;
     }
-    #videoDiv {
+
+    .videoDiv video{
+      width: 220px;
+      height: 220px;
+    }
+    
+    #mazeDiv {
       flex-direction: column;
     }
   }
