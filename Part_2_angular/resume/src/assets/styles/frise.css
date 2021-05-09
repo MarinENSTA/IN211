@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #00009a;
+  top: 0;
+  bottom: 150px;
+
+  z-index:1;
+  margin-left: 28px;
+}
+
+/* Container around content */
+.box {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 90%;
+  
+  /*z-index: -10;*/
+}
+
+/* The circles on the timeline */
+.box::after {
+  content: '';
+  position: absolute;
+  width: 25px !important;
+  height: 25px !important;
+  right: -17px;
+  background-color: #00009a;
+  border: 4px solid #2782f8;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+/* Place the container to the right */
+.right {
+  margin-left: unset;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 999;
+  left: 30px;
+  background-color: #e4e4e4;
+  border: medium solid #e4e4e4;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #e4e4e4 transparent transparent;
+
+
+  display: none;;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.contenu {
+  padding: 20px 30px;
+  background-color: #e4e4e4;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0 0 10px #0a0a64;
+
+}
+
+
+  /* Full-width containers */
+  .box {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  font-size: 20px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .box::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+ .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+
+  .sidenav{
+    box-sizing: unset;
+  }
+  @media screen and (max-width: 1200px) {
+    /* Place the timelime to the left */
+    .timeline{flex : 2}
+  }
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 700px) {
+    /* Place the timelime to the left */
+    .timeline{flex : 100}
+    .timeline::after {
+    left: 0px;
+    }
+    main {margin-left: 0px;}
+  }

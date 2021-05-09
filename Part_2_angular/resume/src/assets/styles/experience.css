@@ -1,0 +1,22 @@
+
+#boom{
+    width: 1024px;
+    height: 476px;
+}
+
+#contact{
+    width: 683px;
+    height: 455px;
+}
+
+@media screen and (max-width: 1500px) {
+    #boom {
+        width : 342px;
+        height: 159px;
+    }
+
+    #contact{
+        width: 228px;
+        height: 152px;
+    }
+  }
