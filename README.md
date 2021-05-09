@@ -22,5 +22,5 @@ While I write this, I have no current issues, all images/videos/others are displ
 
 &rarr; I may implement this soon when I am done with other projects, it is doable without Bootstrap.
 - My main page could have more elements
-- There are so many other projects I would like to put forward, I just kept the ones I liked the most/ the most interesting ones to show yet. I may add those other projects later.
+- There are so many other projects I would like to put forward, I just kept the ones I liked the most/ the most interesting ones to show yet. I may add those other projects in the 'projects' page later.
 
