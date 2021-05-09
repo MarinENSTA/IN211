@@ -19,6 +19,7 @@ While I write this, I have no current issues, all images/videos/others are displ
 
 ### Possible improvements 
 - My navbar should be collapsible instead of reducing the font size on smaller devices. This could have been easy with bootstrap, but ***I chose not to use Bootstrap for this project***, as I was not comfortable enough with this tool yet and it was bringing other issues in. 
+
 &rarr; I may implement this soon when I am done with other projects, it is doable without Bootstrap.
 - My main page could have more elements
 - There are so many other projects I would like to put forward, I just kept the ones I liked the most/ the most interesting ones to show yet. I may add those other projects later.
