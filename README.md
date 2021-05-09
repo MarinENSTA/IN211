@@ -3,7 +3,7 @@
 
 ### Some unfortunate yet possible issues  
 #### Part 1 : basic html
-You may expereience some portability issue : images and videos not being displayed while they should.
+You may experience some portability issue : images and videos not being displayed while they should.
 This was coded on a Linux - Ubuntu 20.04 machine, using VS Code 1.55.2.
 Most of my tests for this part were done using the Live Server option.
 
